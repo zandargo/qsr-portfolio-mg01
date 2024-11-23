@@ -1,1 +1,157 @@
 // app global css in SCSS form
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('/fonts/FiraCodeiScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('/fonts/FiraCodeiScript-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('/fonts/FiraCodeiScript-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.FiraCode {
+  font-family: 'FiraCode';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gradient-text1 {
+  // background: linear-gradient(to bottom, $green-13, $green-10);
+  background-image: linear-gradient(to bottom,
+    $green-12 25%,
+    $teal-10 99%,
+  ),
+  repeating-linear-gradient(to bottom,
+      rgba(0, 80, 0, 0.1),
+      rgba(0, 80, 0, 0.1) 2px,
+      transparent 2px,
+      transparent 4px);
+  background-blend-mode: multiply;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.gradient-text2 {
+  background-image: linear-gradient(to bottom,
+    $cyan-5 25%,
+    $teal-8 99%,
+  ),
+  repeating-linear-gradient(to bottom,
+      rgba(0, 80, 0, 0.1),
+      rgba(0, 80, 0, 0.1) 2px,
+      transparent 2px,
+      transparent 4px);
+  background-blend-mode: multiply;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+
+
+.t1 {
+  color: $teal-3;
+}
+
+
+
+
+
+
+
+
+
+.shadow-text1 {
+  text-shadow:
+    0 0 4px rgba($green-13, 0.2);
+}
+
+.shadow-text1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  color: transparent;
+  background: $teal-10;
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: -1;
+  filter: blur(4px);
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+.bg-mg {
+  background: radial-gradient(ellipse at 50% 0%,
+      rgba(#122, 0.95) 0%,
+      rgba(#000, 0.98) 75%);
+}
+
+.bg-grid1 {
+  background-image:
+      linear-gradient(rgba(255, 255, 255, .5) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(255, 255, 255, .5) 2px, transparent 2px),
+      linear-gradient(rgba(255, 255, 255, .28) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, .28) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+
+.striped-bgs-eight {
+  background: #eee;
+  background-image: linear-gradient(45deg, $blue-grey-10 50%, $blue-grey-8 0);
+  background-size: 20px 20px;
+}
+
+
+.conic-gradient1 {
+  background: conic-gradient(
+    from 225deg,
+    $blue-grey-5 0,
+    $blue-grey-5 90deg,
+    $blue-grey-1 90deg,
+    $blue-grey-1 180deg,
+    $blue-grey-5 180deg,
+    $blue-grey-5 270deg,
+    $blue-grey-9 270deg,
+    $blue-grey-9 360deg
+  );
+    background-size: 1em 1em;
+    height: 100vh;
+}
+
+
+
+

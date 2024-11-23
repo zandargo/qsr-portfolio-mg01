@@ -12,7 +12,8 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : #1976D2;
+// $primary   : #1976D2;
+$primary   : #00e676;
 $secondary : #26A69A;
 $accent    : #9C27B0;
 
@@ -23,3 +24,19 @@ $positive  : #21BA45;
 $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
+
+
+
+$generic-border-radius : 12px !default;
+
+.q-card--dark {
+  border: 1px solid rgba(0, 255, 128, 0.5);
+  box-shadow:
+    0 0 5px 5px rgba(0, 255, 128, 0.12);
+  // background: rgba(16, 32, 24, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.q-dark {
+  color: #afe;
+}

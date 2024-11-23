@@ -1,15 +1,36 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="flex flex-box justify-between">
+
+    <section class="q-pa-lg row q-gutter-lg">
+
+      <CardSkills class="col-5"/>
+      <CardStack class="col-6"/>
+
+    </section>
+
   </q-page>
 </template>
 
 <script setup>
-defineOptions({
-  name: 'IndexPage'
-});
+  import anime from 'animejs/lib/anime.es.js'
+  import { onMounted } from 'vue'
+  import TextGradient from 'components/atoms/TextGradient.vue'
+  import CardSkills from 'src/components/cards/CardSkills.vue'
+  import CardStack from 'src/components/cards/CardStack.vue'
+
+
+  defineOptions({
+    name: 'IndexPage'
+  })
+
+  // anime({
+  //   targets: 'div',
+  //   translateX: 250,
+  //   rotate: '1turn',
+  //   backgroundColor: '#FFF',
+  //   duration: 800
+  // })
+
+
+
 </script>
